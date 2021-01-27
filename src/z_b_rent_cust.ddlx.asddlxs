@@ -1,0 +1,18 @@
+@Metadata.layer: #CORE
+annotate view Z_B_RENT_CUST with
+{
+ @UI.lineItem: [{ position: 10, importance: #HIGH, label: 'Nombre'}]
+ Nombre;
+ 
+ 
+ @UI.lineItem: [{ position: 20, importance: #HIGH, label: 'Apellido' }]
+ Apellidos;
+ 
+ 
+ @UI.lineItem: [{ position: 30, importance: #HIGH, label: 'Correo electrónico' }]
+ Correo;
+
+
+ @UI.lineItem: [{ position: 40, importance: #HIGH, label: 'Tipo de contrato' }]
+ TipoContrato;
+}
