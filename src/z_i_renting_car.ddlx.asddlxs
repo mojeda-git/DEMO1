@@ -29,6 +29,7 @@
 }
 @Search.searchable: true
 
+
 annotate view Z_I_RENTING_CAR with
 {
   @UI.facet: [{ id: 'DetallesVehiculo',
