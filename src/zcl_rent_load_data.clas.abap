@@ -25,20 +25,20 @@ CLASS zcl_rent_load_data IMPLEMENTATION.
 
 ** BRANDS **
     lt_brands = VALUE #(
-    ( marca = 'ASTON MARTIN' url = 'https://www.autobild.es/sites/autobild.es/public/styles/main_element/public/dc/fotos/Aston_MartinDB9_2013_01.jpg?itok=bGlXq8UF' )
-    ( marca = 'AUDI' url = 'https://acroadtrip.blob.core.windows.net/catalogoimagenes/xl/RT_V_8ca58632abf44d0db6f1b476fd54eec2.jpg')
-    ( marca = 'BENTLEY' url = 'https://www.autobild.es/sites/autobild.es/public/styles/main_element/public/dc/fotos/BentleyContinental_GT-2018-C01.jpg?itok=_kP_edH4')
-    ( marca = 'BUGATTI' url = 'https://wtfonline.mx/wpcontent/uploads/2018/12/buggatti.jpg')
-    ( marca = 'FERRARI' url = 'https://api.ferrarinetwork.ferrari.com/v2/networkcontent/medias/resize/5dd552852cdb32285a785d2e-lineup-ferrari-sf90-stradale?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&width=800&height=600')
-    ( marca = 'FORD'    url = 'https://www.elsoldemexico.com.mx/deportes/automotriz/1i0d6x02_2019.png/ALTERNATES/LANDSCAPE_400/02_2019.png')
-    ( marca = 'HONDA'  url = 'https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/480/public/media/image/2017/06/643677-honda-civic-type-r-2017.jpg?itok=pmaP2b_K')
-    ( marca = 'JEEP' url = 'https://s.aolcdn.com/commerce/autodata/images/USC80JES162A021001.jpg')
-    ( marca = 'KIA' url = 'https://www.kia.com/content/dam/kwcms/mx/es/images/vehicles/thumnails_2020/menu_showrooms/Perfil-HomeStinger.png')
-    ( marca = 'MERCEDES' url = 'https://www.me.mercedesbenz.com.mx/es/passengercars/_jcr_content/image.MQ6.2.2x.20190815083805.png')
-    ( marca = 'MINI' url = 'https://s.aolcdn.com/commerce/autodata/images/USC70MNC091B021001.jpg')
-    ( marca = 'SEAT' url = 'https://www.seat.mx/content/countries/mx/seatwebsite/es/modelos/ibiza/_jcr_content.resizedViewPort.noscale.rangeMiniature.png')
-    ( marca = 'VW' url = 'https://www.vwimg.com/iris/iris?bkgnd=transparent&fabric=BC&paint=0Q0Q&pov=E06,CGN&quality=100&vehicle=2020_BU32MS_2019_10_27&Resp=png&width=510&crop=20,90,450,232')
-    ( marca = 'BMW' url = 'https://www.bmw.com.mx/content/dam/bmw/common/allmodels/3-series/sedan/2018/navigation/bmw-3-seriesmodellfinder.png') ).
+    ( marca = 'ASTON MARTIN' )
+    ( marca = 'AUDI' )
+    ( marca = 'BENTLEY' )
+    ( marca = 'BUGATTI' )
+    ( marca = 'FERRARI' )
+    ( marca = 'FORD'    )
+    ( marca = 'HONDA' )
+    ( marca = 'JEEP' )
+    ( marca = 'KIA' )
+    ( marca = 'MERCEDES')
+    ( marca = 'MINI' )
+    ( marca = 'SEAT')
+    ( marca = 'VW' )
+    ( marca = 'BMW' ) ).
 
 
     DELETE FROM ztb_rent_brands.
@@ -48,22 +48,22 @@ CLASS zcl_rent_load_data IMPLEMENTATION.
 
 ** CARS**
     lt_cars = VALUE #(
-    ( matricula = '1246GSA' marca = 'BMW' modelo = 'SERIE 4' color = 'BLANCO' motor = '2.5' potencia = '210' und_potencia = 'CV' combustible = 'GASOLINA' consumo = '7.00' fecha_fabr = '20200418' puertas = '5' precio = '210' moneda = 'USD' alquilado = 'X'
-   alq_desde = '20211201' alq_hasta = '20211231' )
-    ( matricula = '2174FHF' marca = 'KIA' modelo = 'CEE''D' color = 'AZUL' motor = '4.2' potencia = '340' und_potencia = 'CV'  combustible = 'GASOLINA' consumo = '10.00' fecha_fabr = '20200617' puertas = '5' precio = '160' moneda = 'USD' alquilado = 'X'
-   alq_desde = '20200801' alq_hasta = '20200831' )
+    ( matricula = '1246GSA' marca = 'BMW' modelo = 'SERIE 4' color = 'BLANCO' motor = '2.5' potencia = '210' und_potencia = 'CV' combustible = 'GASOLINA' consumo = '7.00' fecha_fabr = '20200201' puertas = '5' precio = '210' moneda = 'USD' alquilado = 'X'
+   alq_desde = '20210101' alq_hasta = '20210201' url =  'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/BMW_420i_xdrive_m_sport.jpg/1200px-BMW_420i_xdrive_m_sport.jpg' )
+    ( matricula = '2174FHF' marca = 'KIA' modelo = 'STINGER' color = 'AZUL' motor = '4.2' potencia = '340' und_potencia = 'CV'  combustible = 'GASOLINA' consumo = '10.00' fecha_fabr = '20200617' puertas = '5' precio = '160' moneda = 'USD' alquilado = 'X'
+   alq_desde = '20200801' alq_hasta = '20200831' url = 'https://www.autopista.es/uploads/s1/57/62/20/8/article-nuevo-kia-stinger-precios-espana-59d4a0c8489a7.jpeg')
     ( matricula = '2356FSF' marca = 'AUDI' modelo = 'A8' color = 'BLANCO' motor = '3.9' potencia = '140' und_potencia = 'CV' combustible = 'ELECTRIC' consumo = '00.00' fecha_fabr = '20200304' puertas = '3' precio = '140' moneda = 'USD' alquilado = 'X'
-   alq_desde = '20210701' alq_hasta = '20210708' )
+   alq_desde = '20210101' alq_hasta = '20210708' url = 'https://www.autobild.es/sites/autobild.es/public/styles/main_element/public/dc/fotos/Audi_S8_01.jpg?itok=207C7UxE' )
    ( matricula = '2392JFH' marca = 'JEEP' modelo = 'GRAND CHEROKEE' color = 'BLANCO' motor ='3.6' potencia = '176' und_potencia = 'CV' combustible = 'GASOLINA' consumo = '12.00' fecha_fabr = '20200924' puertas = '5' precio = '160' moneda = 'USD' alquilado
-  = 'X' alq_desde ='20200601' alq_hasta = '20201001' )
+  = 'X' alq_desde ='20200601' alq_hasta = '20201001' url = 'https://cdn.autobild.es/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2014/02/309795-jeep-grand-cherokee-2013-espana-julio.jpg?itok=6L_dudPD' )
    ( matricula = '2837KFF' marca = 'MERCEDES' modelo = 'CLASE B' color = 'NEGRO' motor = '2.0' potencia = '200' und_potencia = 'CV' combustible = 'GASOLINA' consumo = '7.00' fecha_fabr = '20200726' puertas = '5' precio = '160' moneda = 'USD' alquilado =
-  'X' alq_desde = '20200301' alq_hasta = '20210301' )
+  'X' alq_desde = '20200301' alq_hasta = '20210301' url ='https://static.motor.es/fotos-noticias/2019/05/min652x435/prueba-mercedes-clase-b-2019-201956886-1558366344_3.jpg' )
   ( matricula = '2837SUF' marca = 'MERCEDES' modelo = 'CLASE C' color = 'AMARILLO' motor = '3.0' potencia = '220' und_potencia = 'CV' combustible = 'GASOLINA' consumo = '6.00' fecha_fabr = '20200614' puertas = '5' precio = '180' moneda = 'USD' alquilado =
- 'X' alq_desde ='20211201' alq_hasta = '20211206' )
-  ( matricula = '2847JGH' marca = 'HONDA' modelo = 'CARENS' color = 'NEGRO' motor = '1.9' potencia = '180' und_potencia = 'CV' combustible = 'DIESEL' consumo = '5.00' fecha_fabr = '20210716' puertas = '5' precio = '180' moneda = 'USD' alquilado = 'X'
- alq_desde ='20211201' alq_hasta = '20211206' )
+ 'X' alq_desde ='20211201' alq_hasta = '20211206' url = 'https://cdn.topgear.es/sites/navi.axelspringer.es/public/styles/855/public/media/image/2019/06/mercedes-amg-a35-shooting-brake_3.jpg?itok=XEkTaPH5' )
+  ( matricula = '2847JGH' marca = 'HONDA' modelo = 'CIVIC' color = 'NEGRO' motor = '1.9' potencia = '180' und_potencia = 'CV' combustible = 'DIESEL' consumo = '5.00' fecha_fabr = '20210716' puertas = '5' precio = '180' moneda = 'USD' alquilado = 'X'
+ alq_desde ='20211201' alq_hasta = '20211206' url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/2019_Honda_Civic_coupe_%28facelift%29%2C_front_12.16.19.jpg/300px-2019_Honda_Civic_coupe_%28facelift%29%2C_front_12.16.19.jpg')
   ( matricula = '29348KJ' marca = 'MINI' modelo = 'CABRIO' color = 'AMARILLO' motor = '2.0' potencia = '240' und_potencia = 'CV' combustible = 'ELECTRIC' consumo = '0.00' fecha_fabr = '20200812' puertas = '3' precio = '150' moneda = 'USD' alquilado = 'X'
- alq_desde ='20211106' alq_hasta = '20211206' )
+ alq_desde ='20211106' alq_hasta = '20211206' url = 'https://s.aolcdn.com/commerce/autodata/images/USC70MNC091B021001.jpg'  )
   ).
 
     DELETE FROM ztb_rent_cars.

@@ -6,7 +6,5 @@
 define view Z_B_RENT_BRANDS
   as select from ztb_rent_brands
 {
-  key marca as Marca,
-      @UI.hidden: true
-      url   as Imagen
+  key marca as Marca
 }

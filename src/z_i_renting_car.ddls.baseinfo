@@ -3,7 +3,6 @@
 {
 "FROM":
 [
-"Z_B_RENT_BRANDS",
 "Z_B_RENT_CARS",
 "Z_B_RENT_REM_DAYS"
 ],

@@ -26,6 +26,7 @@ define view Z_I_RENTING_CAR
       Alquilado,
       Desde,
       Hasta,
+      Imagen,
       // 0 neutral grey
       // 1 negative red
       // 2 critical yellow
@@ -38,6 +39,7 @@ define view Z_I_RENTING_CAR
       else 0
       end as TiempoRenta,
       ''  as Estado,
-      _Brands.Imagen,
+      _RemDays.Dias as DiasRest,
+      _Brands,
       _DetCustomer
 }
